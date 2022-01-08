@@ -2,4 +2,4 @@
 
 const miniMaxSum = require('./miniMaxSum');
 
-console.log(miniMaxSum(5542, 87, 5, 3, 9));
+console.log(miniMaxSum(1, 2, 3, 4, 5));
