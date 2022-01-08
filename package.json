@@ -1,0 +1,11 @@
+{
+  "name": "minimaxsum",
+  "version": "1.0.0",
+  "description": "Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "diegodevs <diegom.develops@gmail.com>",
+  "license": "MIT"
+}
