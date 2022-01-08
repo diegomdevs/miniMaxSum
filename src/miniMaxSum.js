@@ -1,13 +1,18 @@
 "use stric";
 
 function miniMaxSum(...arr) {
-  const minimum = arr.reduce((previus, current) => {
-    return previus + current;
-  })
-  const maximun = arr.reduce((previus, current) => {
-    return previus + current;
-  })
-  console.log(`${minimum - arr[arr.length - 1]} ${maximun - arr[0]}`);
+  let minimun = 0;
+  let maximun = 0;
+  for (let index = 0; index < arr.length; index++) {
+    const element = arr[index];
+    if (element === arr[arr.length - 1]) continue;
+    minimun += element;
+  }
+  for (let index = 0; index < arr.length; index++) {
+    const element = arr[index];
+    if (element === arr[0]) continue;
+    maximun += element;
+  }
+  return `${minimun} ${maximun}`;
 }
-miniMaxSum(5, 7,9,8,7);
 module.exports = miniMaxSum;
